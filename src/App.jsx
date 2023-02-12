@@ -1,11 +1,17 @@
-import { useState } from "react";
+import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+import Header from "./parts/Header";
 
 function App() {
     return (
-        <div className="App">
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+            </Routes>
+        </Router>
     );
 }
 

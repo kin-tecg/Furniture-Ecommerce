@@ -3,11 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 /* utils */
-
 .grid {
   grid-auto-flow: row dense;
   grid-auto-rows: minmax(180px, auto);
